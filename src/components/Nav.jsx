@@ -1,5 +1,5 @@
 import React from 'react';
-import {BiHome,BiSolidUserCircle} from 'react-icons/bi'
+import {BiHome,BiSolidUserCircle,BiCustomize,BiPhoneCall} from 'react-icons/bi'
 import { FaJediOrder } from "react-icons/fa";
 import { Link } from 'react-scroll';
 const Nav = () => {
@@ -18,10 +18,10 @@ const Nav = () => {
           <FaJediOrder/>
         </Link>
         <Link activeClass='active' smooth={true} spy={true} to='work' className='cursor-pointer w-[50px] h-[50px] flex justify-center items-center'>
-          <BiSolidUserCircle/>
+          <BiCustomize/>
         </Link>
         <Link activeClass='active'smooth={true} spy={true} to='contact' className='cursor-pointer w-[50px] h-[50px] flex justify-center items-center'>
-          <BiSolidUserCircle/>
+          <BiPhoneCall/>
         </Link>
       </div>
     </div>
