@@ -9,7 +9,7 @@ import Contact from './components/Contact';
 
 function App() {
    return (
-    <div  className='bg-site bg-no-repeat bg-cover overflow-hidden'>
+    <div  className='relative bg-site bg-no-repeat bg-cover overflow-hidden'>
       <Header />
       <Banner />
       <Nav />
