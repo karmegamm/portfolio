@@ -6,8 +6,6 @@ import Image from "../assets/avatar.svg"
 import { social } from '../Data';
 import {Link} from 'react-scroll'
 import { GoRocket } from "react-icons/go";
-import Lottie from 'lottie-web';
-import animationData from '../data/developer.json'
 
 const Banner = () => {
   return <section id='home' className='section min-h-[85vh] lg:min-h-[78vh]'>
@@ -70,7 +68,7 @@ const Banner = () => {
         initial="hidden" 
         whileInView={'show'} 
         className='hidden  lg:flex flex-1 lg:mx-w-[420px] mx-auto max-w-[320px]'>
-          {/* <img className=' ' src={Image} alt={"profile"} /> */}
+          <img className=' ' src={Image} alt={"profile"} />
 
         </motion.div>
       </div>
