@@ -30,7 +30,7 @@ const Banner = () => {
               sequence={[
                 'Web Developer',2000,
                 'MERN Stack Developer',2000,
-                'Developer',2000,
+                'FULL Stack Developer',2000,
               ]}
               speed={50}
               className='text-accent'
