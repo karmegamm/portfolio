@@ -21,7 +21,6 @@ const Banner = () => {
             viewport={{once:false,amount:0.7}} 
             className='text-[55px] font-bold leading-[0.7] lg:text-[65px]'
           >KAR <span>MEGAM</span></motion.h1>
-          
             <motion.div 
              variants={fadeIn('up',0.4)} 
              initial="hidden" 
