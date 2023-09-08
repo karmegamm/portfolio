@@ -29,3 +29,39 @@ export const social= [
         icon:<FaInstagram/>
     },
 ]
+
+export const countDetails =[
+    {
+        first :'Years Of',
+        second:'Education',
+        value:14
+    },
+    {
+        first :'Years Of',
+        second:'Education',
+        value:19
+    },
+    {
+        first :'Years Of',
+        second:'Education',
+        value:70
+    }
+]
+
+const skills =[
+    {
+        name:'UI/UX',
+        description: 'Greetings and a warm welcome!✨ I am thrilled to have you here to read my short and crisp introduction, exploring my creative space and professional journey. This portfolio is a reflection of my',
+        link:'learn more'
+    },
+    {
+        name:'UI/UX',
+        description: 'Greetings and a warm welcome!✨ I am thrilled to have you here to read my short and crisp introduction, exploring my creative space and professional journey. This portfolio is a reflection of my',
+        link:'learn more'
+    },
+    {
+        name:'UI/UX',
+        description: 'Greetings and a warm welcome!✨ I am thrilled to have you here to read my short and crisp introduction, exploring my creative space and professional journey. This portfolio is a reflection of my',
+        link:'learn more'
+    },
+]

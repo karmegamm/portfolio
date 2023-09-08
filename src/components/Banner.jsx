@@ -69,7 +69,6 @@ const Banner = () => {
         whileInView={'show'} 
         className='hidden  lg:flex flex-1 lg:mx-w-[420px] mx-auto max-w-[320px]'>
           <img className=' ' src={Image} alt={"profile"} />
-
         </motion.div>
       </div>
 
