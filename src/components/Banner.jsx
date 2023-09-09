@@ -17,7 +17,7 @@ const Banner = () => {
             initial="hidden" 
             whileInView={'show'} 
             viewport={{once:false,amount:0.7}} 
-            className='text-[55px] font-bold leading-[0.7] lg:text-[70px]'
+            className='text-[55px] font-bold leading-[0.7] lg:text-[65px]'
           >KAR <span>MEGAM</span></motion.h1>
             <motion.div 
              variants={fadeIn('up',0.4)} 
@@ -67,9 +67,9 @@ const Banner = () => {
         variants={fadeIn('down',0.5)} 
         initial="hidden" 
         whileInView={'show'} 
-        className='hidden relative  lg:flex flex-1 lg:mx-w-[380px] mx-auto max-w-[320px]  mix-blend-lighten '>
-          <img className=' rounded-r-[70px] rounded-l-[35px]  mix-blend-overlay' src={Image} alt={"profile"} />
-          <div className='h-full w-full  rounded-xl filter blur-md  rounded-r-[70px] rounded-l-[35px]  absolute bg-accent opacity-[.18] z-50'></div>
+        className='hidden relative  lg:flex flex-1 lg:mx-w-[380px] mx-auto max-w-[320px]  mix-blend-lighten opacity-40'>
+          <img className=' rounded-r-[40px] rounded-l-[35px]  mix-blend-overlay opacity-75' src={Image} alt={"profile"} />
+          <div className='h-full w-full  rounded-xl filter blur-md  rounded-r-[40px] rounded-l-[35px]  absolute bg-accent opacity-[.15] z-50'></div>
         </motion.div>
       </div>
 
