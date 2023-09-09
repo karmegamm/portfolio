@@ -2,7 +2,7 @@ import React from 'react';
 import  {TypeAnimation} from 'react-type-animation';
 import {motion} from 'framer-motion'
 import {fadeIn} from "../variants"
-import Image from "../assets/avatar.svg"
+import Image from "../assets/wob.png"
 import { social } from '../Data';
 import {Link} from 'react-scroll'
 import { GoRocket } from "react-icons/go";
@@ -17,7 +17,7 @@ const Banner = () => {
             initial="hidden" 
             whileInView={'show'} 
             viewport={{once:false,amount:0.7}} 
-            className='text-[55px] font-bold leading-[0.7] lg:text-[65px]'
+            className='text-[55px] font-bold leading-[0.7] lg:text-[70px]'
           >KAR <span>MEGAM</span></motion.h1>
             <motion.div 
              variants={fadeIn('up',0.4)} 
@@ -67,8 +67,9 @@ const Banner = () => {
         variants={fadeIn('down',0.5)} 
         initial="hidden" 
         whileInView={'show'} 
-        className='hidden  lg:flex flex-1 lg:mx-w-[420px] mx-auto max-w-[320px]'>
-          <img className=' ' src={Image} alt={"profile"} />
+        className='hidden relative  lg:flex flex-1 lg:mx-w-[380px] mx-auto max-w-[320px]  mix-blend-lighten '>
+          <img className=' rounded-r-[70px] rounded-l-[35px]  mix-blend-overlay' src={Image} alt={"profile"} />
+          <div className='h-full w-full  rounded-xl filter blur-md  rounded-r-[70px] rounded-l-[35px]  absolute bg-accent opacity-[.18] z-50'></div>
         </motion.div>
       </div>
 

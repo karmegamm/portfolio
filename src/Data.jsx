@@ -48,7 +48,7 @@ export const countDetails =[
     }
 ]
 
-const skills =[
+export const skills =[
     {
         name:'UI/UX',
         description: 'Greetings and a warm welcome!✨ I am thrilled to have you here to read my short and crisp introduction, exploring my creative space and professional journey. This portfolio is a reflection of my',
