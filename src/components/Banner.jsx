@@ -69,7 +69,7 @@ const Banner = () => {
         whileInView={'show'} 
         className='hidden relative  lg:flex flex-1 lg:mx-w-[380px] mx-auto max-w-[320px]  mix-blend-lighten opacity-40'>
           <img className=' rounded-r-[40px] rounded-l-[35px]  mix-blend-overlay opacity-75' src={Image} alt={"profile"} />
-          <div className='h-full w-full  rounded-xl filter blur-md  rounded-r-[40px] rounded-l-[35px]  absolute bg-accent opacity-[.15] z-50'></div>
+          <div className='h-full w-full  rounded-xl filter blur-lg rounded-r-[40px] rounded-l-[35px]  absolute bg-accent opacity-[.15] z-50'></div>
         </motion.div>
       </div>
 
