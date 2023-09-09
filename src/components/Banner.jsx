@@ -10,7 +10,7 @@ import { GoRocket } from "react-icons/go";
 const Banner = () => {
   return <section id='home' className='section min-h-[85vh] lg:min-h-[78vh]'>
     <div className="container mx-auto -mt-28">
-      <div className='flex flex-col  lg:flex-row lg:items-center lg:justify-between '>
+      <div className='flex flex-col  lg:flex-row lg:items-center lg:justify-evenly '>
         <div  className='flex-1 text-center font-secondary lg:text-left '>
           <motion.h1 
             variants={fadeIn('up',0.3)} 
@@ -57,9 +57,9 @@ const Banner = () => {
            initial="hidden" 
            whileInView={'show'} 
            viewport={{once:false,amount:0.7}} 
-           className='mt-10 flex justify-center lg:justify-start text-[25px] gap-x-5  mx-auto  items-center  lg:mx-0'>
+           className='mt-8 flex justify-center lg:justify-start text-[25px] gap-x-5  mx-auto  items-center  lg:mx-0'>
             {social.map(({href,icon},index)=>{
-              return <a className='text-white/70 hover:text-white' key={index} href={href}>{icon}</a>
+              return <a target='_blank' className='text-white/70 hover:text-white' key={index} href={href}>{icon}</a>
             })}
           </motion.div> 
         </div>
@@ -67,12 +67,11 @@ const Banner = () => {
         variants={fadeIn('down',0.5)} 
         initial="hidden" 
         whileInView={'show'} 
-        className='hidden relative  lg:flex flex-1 lg:mx-w-[380px] mx-auto max-w-[320px]  mix-blend-lighten opacity-40'>
-          <img className=' rounded-r-[40px] rounded-l-[35px]  mix-blend-overlay opacity-75' src={Image} alt={"profile"} />
-          <div className='h-full w-full  rounded-xl filter blur-lg rounded-r-[40px] rounded-l-[35px]  absolute bg-accent opacity-[.15] z-50'></div>
+        className='hidden relative  lg:flex flex-1 lg:mx-w-[300px] mx-auto max-w-[320px] mix-blend-lighten  opacity-40 '>
+          <img className=' rounded-r-[40px] lg:scale-[0.9] rounded-l-[35px]  mix-blend-overlay opacity-75' src={Image} alt={"profile"} />
+          <div className='h-full w-full scale-[1]  rounded-xl filter blur-lg rounded-r-[40px] rounded-l-[35px]  absolute bg-accent  opacity-[.15] z-50'></div>
         </motion.div>
       </div>
-
     </div>
   </section>;
 };

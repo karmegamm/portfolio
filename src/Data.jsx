@@ -15,7 +15,7 @@ export const social= [
     },
     {
         name:'github',
-        href:"sds",
+        href:"https://github.com/karmegamm",
         icon:<FaGithub/>
     },
     {
