@@ -14,7 +14,7 @@ const Header = () => {
           <h2 className='absolute font-bold text-white/80 text-[3em]'>KM</h2>
           <h2 className='absolute font-bold text-white/80 text-[3em]'>KM</h2>
           <div className='absolute text-[12px] -rotate-90 left-[59px] -top-1 font-extrabold text-gradient tracking-[2px]'>DEV</div>
-          <HiOutlineCode className='absolute -left-12 -top-2 text-[45px] text-gray-500'/>
+          <HiOutlineCode className='absolute -left-12 -top-2 text-[45px] text-accent'/>
         </div>
         <button className='btn px-4 py-0 font-secondary lg:text-[20px] flex justify-evenly items-center gap-x-2'><SiAzurefunctions/>Get Cv</button>
       </div>
