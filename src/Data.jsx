@@ -10,7 +10,7 @@ export const social= [
     },
     {
         name:'linkedIn',
-        href:"sds",
+        href:"https://www.linkedin.com/in/karmegamm/",
         icon:<FaLinkedin/>
     },
     {
@@ -20,12 +20,12 @@ export const social= [
     },
     {
         name:'facebook',
-        href:"sdsd",
+        href:"https://www.facebook.com/profile.php?id=100087293084309&mibextid=ZbWKwL",
         icon:<FaFacebookSquare/>
     },
     {
         name:'instagram',
-        href:"sdsd",
+        href:"https://www.instagram.com/ganeshmaran_143",
         icon:<FaInstagram/>
     },
 ]
@@ -51,17 +51,17 @@ export const countDetails =[
 export const skills =[
     {
         name:'UI/UX',
-        description: 'Greetings and a warm welcome!✨ I am thrilled to have you here to read my short and crisp introduction, exploring my creative space and professional journey. This portfolio is a reflection of my',
+        description: 'Greetings and a warm welcome!✨ I am thrilled to have you here to read my short and crisp introduction',
         link:'learn more'
     },
     {
         name:'UI/UX',
-        description: 'Greetings and a warm welcome!✨ I am thrilled to have you here to read my short and crisp introduction, exploring my creative space and professional journey. This portfolio is a reflection of my',
+        description: 'Greetings and a warm welcome!✨ I am thrilled to have you here to read my short and crisp introduction',
         link:'learn more'
     },
     {
         name:'UI/UX',
-        description: 'Greetings and a warm welcome!✨ I am thrilled to have you here to read my short and crisp introduction, exploring my creative space and professional journey. This portfolio is a reflection of my',
+        description: 'Greetings and a warm welcome!✨ I am thrilled to have you here to read my short and crisp introduction',
         link:'learn more'
     },
 ]

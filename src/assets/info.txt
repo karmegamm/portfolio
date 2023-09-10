@@ -1,18 +1,14 @@
 
 Hope you enjoy your new logo, here are the people that
 made your beautiful logo happen :)
-font name: Corben-Regular
-font link: https://fonts.google.com/specimen/Corben
-font author: Vernon Adams
-font author site: http://sansoxygen.com/
-Slogan Font: KaushanScript-Regular.ttf
+font name: InknutAntiqua-SemiBold
+font link: https://fonts.google.com/specimen/Inknut+Antiqua
+font author: Claus Eggers Sørensen
+font author site: https://forthehearts.net/
+Slogan Font: Questrial-Regular.otf
 
-icon designer: Olivier Guin
-icon designer link: /olivierguin
+icon designer: useiconic.com
+icon designer link: /useiconic.com
         
-
-fontColor: {"hex":"#1E0B36"}
-bgColor: {"hex":"transparent"}
-iconColor: {"hex":"#1E0B36"}
-sloganColor: {"hex":"#000000"}
+{"bg":"transparent","icon-gradient-0":"#E0302F","icon-gradient-1":"#3281DD","font":"#000000","slogan":"#141414"}
       
