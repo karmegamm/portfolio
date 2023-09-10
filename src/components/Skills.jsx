@@ -6,7 +6,7 @@ import { skills } from '../Data';
 
 
 const Skills= () => {
-  return <section id='services' className='section'>
+  return <section id='skills' className='section'>
       <div className="container mx-auto">
         <div className='flex flex-col lg:flex-row' >
           <motion.div 

@@ -14,7 +14,7 @@ const Nav = () => {
         <Link activeClass='active'  smooth={true} spy={true} to='about' className='cursor-pointer w-[50px] h-[50px]  flex justify-center items-center'>
           <BiSolidUserCircle/>
         </Link>
-        <Link activeClass='active'  smooth={true} spy={true} to='services' className='cursor-pointer w-[50px] h-[50px] flex justify-center items-center'>
+        <Link activeClass='active'  smooth={true} spy={true} to='skills' className='cursor-pointer w-[50px] h-[50px] flex justify-center items-center'>
           <FaJediOrder/>
         </Link>
         <Link activeClass='active' smooth={true} spy={true} to='work' className='cursor-pointer w-[50px] h-[50px] flex justify-center items-center'>

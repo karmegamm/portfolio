@@ -3,43 +3,62 @@ import CountUp from 'react-countup';
 import {useInView } from 'react-intersection-observer';
 import {motion } from 'framer-motion';
 import { fadeIn } from '../variants';
-import { countDetails } from '../Data';
+import { countDetails,aboutDescription } from '../Data';
+import { Link } from 'react-scroll';
+import {GiCityCar,GiCrossMark} from 'react-icons/gi'
 
 const About = () => {
+  const [readmore,setReadMore ] = React.useState(false);
   const [ref,inView] = useInView({
     threshold:0.5,
   })
   return <section id='about' className='section' ref={ref}>
-    <div className="container mx-auto">
+    <div className="container mx-auto lg:-mt-24">
       <div
       className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen' >
         <motion.div  
-        variants={fadeIn('right',0.3)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{once:false,amount:0.3}} className='flex-1 bg-about bg-contain bg-no-repeat lg:h-[500px] mix-blend-lighten bg-top' ></motion.div>
-          <motion.div 
+          variants={fadeIn('right',0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{once:false,amount:0.3}} 
+          className='flex-1 mt-9'>
+            <h2 className='h2 text-accent font-primary font-bold'>Myself</h2>
+            <p className='text-[15px] mb-5 leading-6 lg:min-h-[160px] text-white/90'>&ensp;&ensp;&ensp;&ensp;{readmore? aboutDescription[0]+aboutDescription[1]:aboutDescription[0]}
+              <span className='ml-2 text-cyan-500 font-semibold hover:underline underline-offset-2 opacity-40 hover:opacity-100' onClick={()=>setReadMore(!readmore)}>{readmore?"Read Less...":"Read More..."}</span> 
+            </p>
+            <div className='flex gap-x-0 lg:justify-start lg:gap-x-8  items-center'>
+              <Link smooth={true} to={"skills"} className='btn btn-md px-4 font-secondary flex  justify-center items-center gap-2'><GiCrossMark/>Skills</Link>
+              {/* <Link smooth={true} to={"home"} className='btn btn-md px-4 font-secondary flex  justify-center items-center gap-2'>Wanna See me<GiCityCar/></Link> */}
+            </div>
+        </motion.div>
+
+        <motion.div 
            variants={fadeIn('left',0.5)}
            initial="hidden"
            whileInView={"show"}
            viewport={{once:false,amount:0.3}}
-          className='flex-1'>
-            <h2 className='h2 text-accent'>About me.</h2>
-            <h3 className='h3 mb-4 '> I'm an Aspiring full stack web developer (MERN) </h3>
-            <p className='mb-6  '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae voluptas dolorum est dolorem quas non nostrum facere? Quam aspernatur excepturi sequi deleniti non, debitis corporis tempore voluptas cupiditate inventore!</p>
-            <div className='flex gap-x-6 lg:gap-x-10'>
-              {countDetails.map(({first,second,value},index)=>{
-                        return  <div>
-                                  <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                                    {inView?<CountUp start={0} end={value} duration={3} />:0}+
+            className='flex-1 lg:mt-10'>
+            {/* <h2 className='h2 text-accent font-primary font-bold'>Count ups</h2> */}
+            <h3 className='h3 text-white/95  mb-6 leading-8 font-secondary  font-medium uppercase text-[30px] '>I'm the ♨️ Spark that Ignites Connections Everywhere. </h3>
+            <div className='grid lg:grid-cols-3 grid-cols-2 lg:gap-10  lg:max-w-[600px]'>
+              {countDetails.map(({first,second,value,img},index)=>{
+                        return  <div key={index} className='flex justify-center items-center gap-2  p-1'>
+                                  <img src={img} className='h-12 w-12' alt="sds" />
+                                  <div className=' flex-col items-start'>
+                                    <div className=' text-[25px] font-tertiary   text-gradient '>
+                                      {inView?<CountUp start={0} end={value} duration={3} />:0}+
+                                    </div>
+                                    <div className='font-secondary text-white/80 text-sm tracking-[1px]'>
+                                    {first}<br /> {second}
+                                    </div>
+                                    
                                   </div>
-                                  <div className=' font-primary text-sm tracking-[2px]'>
-                                  {first}<br /> {second}
-                                  </div>
+                                  
                               </div> 
                         })}
             </div>
-          </motion.div>
+        </motion.div>
+          
         </div>
       </div>
       <div>  
