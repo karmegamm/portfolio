@@ -8,7 +8,7 @@ import Img3 from "../assets/img3.png"
 const Work = () => {
   return <section id='work' className='section'>
     <div className='container mx-auto bg-black'>
-    
+    hi
     </div>
   </section>;
 };
