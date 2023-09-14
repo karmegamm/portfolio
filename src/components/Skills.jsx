@@ -16,7 +16,7 @@ const Skills= () => {
            whileInView={'show'} 
            viewport={{once:false,amount:0.7}} 
           className='flex-1 lg:bg-services lg:bg-bottom  bg-no-repeat mix-blend-lighten mb-12 lg:mb-0'>
-            <h2 className='font-semibold text-[50px] font-secondary text-accent/90 mb-6'>Expertise Highlights</h2>
+            <h2 className='font-semibold lg:text-[50px] text-[30px] font-secondary text-accent/90 mb-6'>Expertise Highlights</h2>
             <h3 className='font-secondary justify-start text-[20px] max-w-[455px] mb-16 text-white/90'>In the <span className='text-white font-medium text-ellipsis'>Realm of Coding</span> , I'm a <span className='text-yellow-400 font-medium'>maestro👑</span>  so rare, Weaving tech symphonies with expertise to spare.</h3>
             <Link smooth={true} to={"work"} className='btn btn-md px-4 font-secondary flex  justify-center items-center gap-2 w-32 cursor-pointer'><RiProjectorFill className='text-white' />Projects</Link>
           </motion.div>
@@ -30,12 +30,12 @@ const Skills= () => {
             <div>
               {skills.map(({heading,icons},index)=>{
                 return (
-                  <div className=' h-[120px]  flex ' key={index}>
+                  <div className=' h-[120px]  flex my-2' key={index}>
                     <div className='max-w-[470px]'>
                       <h4 className='text-[23px] -tracking-normal font-tertiary text-white/80 font-medium mb-3'>{heading}</h4>
-                      <div className='ml-4 flex flex-wrap gap-3 justify-start items-center'>
+                      <div className='ml-4 flex flex-wrap gap-3 justify-start items-center '>
                         {icons.map((icon,index)=>{
-                          return <img className='w-11 h-11 lg:opacity-80 lg:hover:opacity-100 ' src={icon} key={index} alt="img" />
+                          return <img className='lg:w-11 lg:h-11 h-9 w-9 lg:opacity-80 lg:hover:opacity-100 ' src={icon} key={index} alt="img" />
                         })}
                       </div>
                     </div>
