@@ -7,6 +7,29 @@ import certificate from '../src/assets/certificate.svg';
 import LeetCode  from '../src/assets/leetcode.svg';
 import  tools from '../src/assets/tools.svg';
 import projects from '../src/assets/projects.svg'
+import C from '../src/assets/skills/c.svg'
+import Cplus from '../src/assets/skills/c++.svg'
+import Csharp from '../src/assets/skills/csharp.svg'
+import Docker from '../src/assets/skills/docker.svg'
+import Firebase from '../src/assets/skills/firebase.svg'
+import Git from '../src/assets/skills/git.svg'
+import Github from '../src/assets/skills/github.svg'
+import Java from '../src/assets/skills/java.svg'
+import Js from '../src/assets/skills/javascript.svg'
+import Linux from '../src/assets/skills/linux.svg'
+import Dotnet from '../src/assets/skills/dotnet.svg'
+import Mongodb from '../src/assets/skills/mongodb.svg'
+import Mysql from '../src/assets/skills/mysql.svg'
+import Node from '../src/assets/skills/node-js.svg'
+import Oracle from '../src/assets/skills/oracle.svg'
+import Php from '../src/assets/skills/php.svg'
+import Postman from '../src/assets/skills/postman.svg'
+import ReactIcon from '../src/assets/skills/react.svg'
+import ReactNative from '../src/assets/skills/reactnative.svg'
+import Vite from '../src/assets/skills/vite.svg'
+import Windows from '../src/assets/skills/windows.svg'
+import Android from '../src/assets/skills/android.svg'
+
 
 export const social= [
     {
@@ -77,20 +100,22 @@ export const countDetails =[
 
 export const skills =[
     {
-        name:'UI/UX',
-        description: 'Greetings and a warm welcome!✨ I am thrilled to have you here to read my short and crisp introduction',
-        link:'learn more'
+        heading:'Programming Languages',
+        icons:[C,Cplus,Java,Js,Php,Csharp]
     },
     {
-        name:'UI/UX',
-        description: 'Greetings and a warm welcome!✨ I am thrilled to have you here to read my short and crisp introduction',
-        link:'learn more'
+        heading:'Frameworks && Libraries ',
+        icons:[ReactIcon,Node,ReactNative,Dotnet,Firebase]
+    },    
+    {
+        heading:'DataBases',
+        icons:[Mongodb,Mysql,Oracle]
+        
     },
     {
-        name:'UI/UX',
-        description: 'Greetings and a warm welcome!✨ I am thrilled to have you here to read my short and crisp introduction',
-        link:'learn more'
-    },
+        heading:'Others',
+        icons:[Linux,Windows,Android,Git,Github,Docker,Postman,Vite]
+    }
 ]
 
 export let aboutDescription = ["Greetings !✨,I'm Karmegam M,👣 born on December 23, 2003, and I've embarked on an exciting tech journey. Armed with a 🎓 BSc in Computer Science from ANJAC College 🏫, Sivakasi, I've been on a quest to innovate and create. I proudly co-founded 👑UNIJAC TECHNOLOGIES, a student-led startup, where I serve as a developer, pushing the boundaries of technology.      ","I owe my determination and passion to my parents,👨‍👩‍👧‍👧 Marimuthu and Vasuki, who have been unwavering pillars of support. With every project I take on, I aim to revolutionize the tech landscape. My portfolio showcases my dedication, creativity, and commitment to making a significant impact in the world of technology💻. Explore it to witness the 🌎journey and discover the exciting projects I've been a part of."]

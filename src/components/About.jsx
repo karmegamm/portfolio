@@ -22,12 +22,12 @@ const About = () => {
           whileInView={"show"}
           viewport={{once:false,amount:0.3}} 
           className='flex-1 mt-9'>
-            <h2 className='h2 text-accent font-primary font-bold'>Myself</h2>
+            <h2 className='font-semibold text-[45px] font-secondary text-accent/90 mb-7'>Myself</h2>
             <p className='text-[15px] mb-5 leading-6 lg:min-h-[160px] text-white/90'>&ensp;&ensp;&ensp;&ensp;{readmore? aboutDescription[0]+aboutDescription[1]:aboutDescription[0]}
               <span className='ml-2 text-cyan-500 font-semibold hover:underline underline-offset-2 opacity-40 hover:opacity-100' onClick={()=>setReadMore(!readmore)}>{readmore?"Read Less...":"Read More..."}</span> 
             </p>
             <div className='flex gap-x-0 lg:justify-start lg:gap-x-8  items-center'>
-              <Link smooth={true} to={"skills"} className='btn btn-md px-4 font-secondary flex  justify-center items-center gap-2'><GiCrossMark/>Skills</Link>
+              <Link smooth={true} to={"skills"} className='btn btn-md px-4 font-secondary flex  justify-center items-center gap-2 cursor-pointer'><GiCrossMark/>Skills</Link>
               {/* <Link smooth={true} to={"home"} className='btn btn-md px-4 font-secondary flex  justify-center items-center gap-2'>Wanna See me<GiCityCar/></Link> */}
             </div>
         </motion.div>

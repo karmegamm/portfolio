@@ -67,9 +67,9 @@ const Banner = () => {
         variants={fadeIn('down',0.5)} 
         initial="hidden" 
         whileInView={'show'} 
-        className='hidden relative  lg:flex flex-1 lg:mx-w-[300px] mx-auto max-w-[320px] mix-blend-lighten  opacity-40 '>
-          <img className=' rounded-r-[40px] lg:scale-[0.9] rounded-l-[35px]  mix-blend-overlay opacity-75' src={Image} alt={"profile"} />
-          <div className='h-full w-full scale-[1]  rounded-xl filter blur-lg rounded-r-[40px] rounded-l-[35px]  absolute bg-accent  opacity-[.15] z-50'></div>
+        className='hidden relative  lg:flex flex-1 lg:mx-w-[300px] mx-auto max-w-[320px] mix-blend-lighten '>
+          <img className=' rounded-r-[40px] lg:scale-[0.8] rounded-l-[35px]  mix-blend-lighten opacity-75' src={Image} alt={"profile"} />
+          <div className='h-full w-full scale-[.9]  rounded-xl filter blur-lg rounded-r-[40px] rounded-l-[35px]  absolute bg-accent  opacity-[0.11] z-50'></div>
         </motion.div>
       </div>
     </div>

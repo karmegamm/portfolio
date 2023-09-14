@@ -2,7 +2,8 @@ import React from 'react';
 import {motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 import { skills } from '../Data';
-
+import {RiProjectorFill} from 'react-icons/ri'
+import { Link } from 'react-scroll';
 
 
 const Skills= () => {
@@ -15,9 +16,9 @@ const Skills= () => {
            whileInView={'show'} 
            viewport={{once:false,amount:0.7}} 
           className='flex-1 lg:bg-services lg:bg-bottom  bg-no-repeat mix-blend-lighten mb-12 lg:mb-0'>
-            <h2 className='h2 text-accent mb-6'>In what im specialised In.</h2>
-            <h3 className='h3 max-w-[455px] mb-16 '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque harum officiis, est aliquam temporibus </h3>
-            <button className='btn btn-sm '>Go To Projects</button>
+            <h2 className='font-semibold text-[50px] font-secondary text-accent/90 mb-6'>Expertise Highlights</h2>
+            <h3 className='font-secondary justify-start text-[20px] max-w-[455px] mb-16 text-white/90'>In the <span className='text-white font-medium text-ellipsis'>Realm of Coding</span> , I'm a <span className='text-yellow-400 font-medium'>maestro👑</span>  so rare, Weaving tech symphonies with expertise to spare.</h3>
+            <Link smooth={true} to={"work"} className='btn btn-md px-4 font-secondary flex  justify-center items-center gap-2 w-32 cursor-pointer'><RiProjectorFill className='text-white' />Projects</Link>
           </motion.div>
 
           <motion.div 
@@ -25,14 +26,18 @@ const Skills= () => {
            initial="hidden" 
            whileInView={'show'} 
            viewport={{once:false,amount:0.7}} 
-          className='flex-1'>{}
+          className='flex-1'>
             <div>
-              {skills.map(({name,description,link},index)=>{
+              {skills.map(({heading,icons},index)=>{
                 return (
-                  <div className='border-b border-white/20 h-[146px] mb-[38px]  flex ' key={index}>
+                  <div className=' h-[120px]  flex ' key={index}>
                     <div className='max-w-[470px]'>
-                      <h4 className='text-[20px] tracking-wider font-primary font-semibold  mb-6'>{name}</h4>
-                      <p className='font-secondary leading-tight  mb-2'>{description}</p>
+                      <h4 className='text-[23px] -tracking-normal font-tertiary text-white/80 font-medium mb-3'>{heading}</h4>
+                      <div className='ml-4 flex flex-wrap gap-3 justify-start items-center'>
+                        {icons.map((icon,index)=>{
+                          return <img className='w-11 h-11 lg:opacity-80 lg:hover:opacity-100 ' src={icon} key={index} alt="img" />
+                        })}
+                      </div>
                     </div>
                     <div></div> 
                   </div>
