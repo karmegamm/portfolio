@@ -1,9 +1,9 @@
 import React from 'react';
 import {motion } from 'framer-motion';
 import { fadeIn } from '../variants';
-import Img1 from "../assets/img1.png"
-import Img2 from "../assets/img2.png"
-import Img3 from "../assets/img3.png"
+import Img1 from "../assets/unijac.png"
+import Img2 from "../assets/envirron.png"
+import Img3 from "../assets/bookstore.png"
 
 const Work = () => {
   return <section id='work' className='section '>
@@ -20,46 +20,46 @@ const Work = () => {
           {/* {Image} */}
           <div className=' group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[265px] lg:w-[500px]'>
             {/* {overlay} */}
-            <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
+            <div className='group-hover:bg-black/90 w-full h-full absolute z-40 transition-all duration-300'></div>
             {/* {immage} */}
-            <img className='group-hover:scale-125 transition-transform duration-700' src={Img1} alt="" />
+            <img className='group-hover:scale-125 transition-transform duration-700' src={Img3} alt="" />
             {/* pretitle */}
             <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-              <span className='text-gradient'>UI/UX Design</span>
+              <span className='text-gradient'>E-Commerce Website</span>
               </div>
             {/* title */}
             <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-              <span className='text-3xl text-white'>Project Title </span>
+              <span className='text-3xl text-white'>K2 bookStore</span>
             </div>
           </div>
         </div>
         <div className='flex-1 flex flex-col gap-y-5'>
           <div className='lg:h-[265px] lg:w-[500px] group relative overflow-hidden border-2 border-white/50 rounded-xl'>
               {/* {overlay} */}
-              <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
+              <div className='group-hover:bg-black/90 w-full h-full absolute z-40 transition-all duration-300'></div>
               {/* {immage} */}
-              <img className='group-hover:scale-125 transition-transform duration-700' src={Img1} alt="" />
+              <img className='group-hover:scale-125 transition-transform duration-700' src={Img2} alt="" />
               {/* pretitle */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>UI/UX Design</span>
+                <span className='text-gradient'>ERP Website</span>
                 </div>
               {/* title */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>Project Title </span>
+                <span className='text-3xl text-white'>Envirron  </span>
               </div>
           </div> 
           <div className='lg:h-[265px] lg:w-[500px] group relative overflow-hidden border-2 border-white/50 rounded-xl'>
               {/* {overlay} */}
-              <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
+              <div className='group-hover:bg-black/90 w-full h-full absolute z-40 transition-all duration-300'></div>
               {/* {immage} */}
               <img className='group-hover:scale-125 transition-transform duration-700' src={Img1} alt="" />
               {/* pretitle */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>UI/UX Design</span>
+                <span className='text-gradient'>web Devlopment</span>
                 </div>
               {/* title */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>Project Title </span>
+                <span className='text-3xl text-white'>Unijac Technologies </span>
               </div>
           </div> 
         </div>
