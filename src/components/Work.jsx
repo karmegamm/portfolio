@@ -4,6 +4,8 @@ import { fadeIn } from '../variants';
 import Img1 from "../assets/unijac.png"
 import Img2 from "../assets/envirron.png"
 import Img3 from "../assets/bookstore.png"
+import {RiArrowRightCircleFill} from 'react-icons/ri'
+import { Link } from 'react-router-dom';
 
 const Work = () => {
   return <section id='work' className='section '>
@@ -31,6 +33,9 @@ const Work = () => {
             <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
               <span className='text-3xl text-white'>K2 bookStore</span>
             </div>
+            <div className='absolute -bottom-full left-12 group-hover:bottom-4 transition-all duration-1000 z-50'>
+                <a className='flex justify-center items-center gap-3 bg-blue-gray-600 rounded-xl px-2' target='_blank' href="https://envirron.net"><span className=' text-white'>Goto</span> <RiArrowRightCircleFill color='white' className='h-5 w-5'/></a>
+              </div>
           </div>
         </div>
         <div className='flex-1 flex flex-col gap-y-5'>
@@ -47,6 +52,9 @@ const Work = () => {
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
                 <span className='text-3xl text-white'>Envirron  </span>
               </div>
+              <div className='absolute -bottom-full left-12 group-hover:bottom-4 transition-all duration-1000 z-50'>
+                <a className='flex justify-center items-center gap-3 bg-blue-gray-600 rounded-xl px-2' target='_blank' href="https://envirron.net"><span className=' text-white'>Goto</span> <RiArrowRightCircleFill color='white' className='h-5 w-5'/></a>
+              </div>
           </div> 
           <div className='lg:h-[265px] lg:w-[500px] group relative overflow-hidden border-2 border-white/50 rounded-xl'>
               {/* {overlay} */}
@@ -60,6 +68,9 @@ const Work = () => {
               {/* title */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
                 <span className='text-3xl text-white'>Unijac Technologies </span>
+              </div>
+              <div className='absolute -bottom-full left-12 group-hover:bottom-4 transition-all duration-1000 z-50'>
+                <a className='flex justify-center items-center gap-3 bg-blue-gray-600 rounded-xl px-2' target='_blank' href="https://unijactech.com"><span className=' text-white'>Goto</span> <RiArrowRightCircleFill color='white' className='h-5 w-5'/></a>
               </div>
           </div> 
         </div>
