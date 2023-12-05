@@ -9,9 +9,8 @@ module.exports = withMT({
   ],
   theme: {
     fontFamily: {
-      primary: 'Orbitron',
-      secondary: 'Rajdhani',
-      tertiary: 'Aldrich',
+      primary: 'Urbanist',
+      secondary: 'Poppins',
     },
     container: {
       padding: {

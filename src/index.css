@@ -73,7 +73,7 @@
 
 .content h2:nth-child(1){
   color:transparent;
-  -webkit-text-stroke:1px purple;
+  -webkit-text-stroke:.1px #b809c3;
 }
 
 .content h2:nth-child(2){
