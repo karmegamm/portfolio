@@ -27,7 +27,7 @@ const About = () => {
       <div></div>
     </div>
     </div>
-    <div className="z-40 container mx-auto lg:-mt-24">
+    <div className="z-40 container mx-auto lg:-mt-24 mb-36 lg:mb-0">
       <div
       className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen' >
         <motion.div  

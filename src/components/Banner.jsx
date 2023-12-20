@@ -26,7 +26,7 @@ const Banner = () => {
   }, []); 
 
   return <section id='home' className='section min-h-[85vh] lg:min-h-[76vh]'>
-    <div className="container mx-auto -mt-32">
+    <div className="container mx-auto lg:-mt-32">
       <div className='flex flex-col lg:flex-row lg:items-center lg:justify-evenly '>
         <div  className='flex-1 text-center font-secondary lg:text-left '>  
           <div className='mb-4'>

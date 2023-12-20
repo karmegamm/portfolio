@@ -1,0 +1,52 @@
+@keyframes scroll {
+     0% {
+       transform: translateX(0%);
+     }
+     100% {
+       transform: translateX(-100%);
+     }
+   }
+
+   .scroll-animation:hover {
+     animation-play-state: paused;
+   }
+   .scroll-animation2:hover {
+     animation-play-state: paused;
+   }
+   .scroll-animation {
+     display: inline-flex;
+     animation: scroll 20s linear infinite;
+   }
+   
+   .scroll-animation2 {
+     display: inline-flex;
+     animation: scroll 8s linear infinite;
+   }
+
+   .scrolling-wrapper {
+     position: relative;
+     overflow: hidden;
+     /* Other styles... */
+   }
+   
+   .scrolling-wrapper::before, .scrolling-wrapper::after {
+     content: '';
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     width: 7px; /* Adjust the width to control the fade effect size */
+     z-index: 2;
+     opacity:0.8;
+     pointer-events: none; /* Prevents the pseudo-elements from capturing mouse events */
+   }
+   
+   .scrolling-wrapper::before {
+     left: 0;
+     background: linear-gradient(to right,  #251145, transparent); /* Adjust the color to match your container's background */
+   }
+   
+   .scrolling-wrapper::after {
+     right: 0;
+     background: linear-gradient(to left, #28154d, transparent); /* Adjust the color to match your container's background */
+   }
+   

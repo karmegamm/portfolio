@@ -29,6 +29,11 @@ import ReactNative from '../src/assets/skills/reactnative.svg'
 import Vite from '../src/assets/skills/vite.svg'
 import Windows from '../src/assets/skills/windows.svg'
 import Android from '../src/assets/skills/android.svg'
+import Python from '../src/assets/skills/python.svg'
+import Express from '../src/assets/skills/express.svg'
+import Spring from '../src/assets/skills/springboot.svg'
+import Nginx from '../src/assets/skills/nginx.svg'
+import Xampp from '../src/assets/skills/xampp.svg'
 
 
 export const social= [
@@ -98,24 +103,24 @@ export const countDetails =[
     },
 ]
 
-export const skills =[
-    {
+export const skills ={
+    program:{
         heading:'Programming Languages',
-        icons:[C,Cplus,Java,Js,Php,Csharp]
+        icons:[C,Cplus,Csharp,Java,Python,Js,Php]
     },
-    {
+    libraries:{
         heading:'Frameworks && Libraries ',
-        icons:[ReactIcon,Node,ReactNative,Dotnet,Firebase]
+        icons:[ReactIcon,Node,Express,Spring,ReactNative,Dotnet,Firebase]
     },    
-    {
+    dataBases:{
         heading:'DataBases',
         icons:[Mongodb,Mysql,Oracle]
         
     },
-    {
+    others:{
         heading:'Others',
-        icons:[Linux,Windows,Android,Git,Github,Docker,Postman,Vite]
+        icons:[Linux,Windows,Android,Git,Github,Docker,Postman,Vite,Nginx,Xampp]
     }
-]
+}
 
 export let aboutDescription = ["Greetings !✨,I'm Karmegam M,👣 born on December 23, 2003, and I've embarked on an exciting tech journey. Armed with a 🎓 BSc in Computer Science from ANJAC College 🏫, Sivakasi, I've been on a quest to innovate and create. I proudly co-founded 👑UNIJAC TECHNOLOGIES, a student-led startup, where I serve as a developer, pushing the boundaries of technology.      ","I owe my determination and passion to my parents,👨‍👩‍👧‍👧 Marimuthu and Vasuki, who have been unwavering pillars of support. With every project I take on, I aim to revolutionize the tech landscape. My portfolio showcases my dedication, creativity, and commitment to making a significant impact in the world of technology💻. Explore it to witness the 🌎journey and discover the exciting projects I've been a part of."]
