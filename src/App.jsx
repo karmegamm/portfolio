@@ -8,7 +8,7 @@ import Contact from './components/Contact';
 import Skills from './components/Skills';
 
 function App() {
-   return (
+   return(
     <div  className='relative bg-site bg-no-repeat bg-cover overflow-hidden'>
       <Header />
       <Banner />
