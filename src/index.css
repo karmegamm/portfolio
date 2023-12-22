@@ -90,3 +90,28 @@
   }
 }
 
+/* For Webkit (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+  width: 8px; /* Adjust scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+  background: #240c3c; /* Track background color */
+  border-radius: 10px; /* Rounded corners for track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, rgba(244,76,191,1) 11%, rgba(154,67,185,1) 32%, rgba(131,58,180,1) 76%, rgba(29,253,220,0.7315301120448179) 96%);
+  border-radius: 10px; /* Rounded corners for handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin; /* 'auto' or 'thin' */
+  scrollbar-color: #888 #f1f1f1; /* Thumb and track color */
+}

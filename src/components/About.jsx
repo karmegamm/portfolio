@@ -36,7 +36,7 @@ const About = () => {
           whileInView={"show"}
           viewport={{once:true,amount:0.3}} 
           className='flex-1 mt-9'>
-            <h2 className='font-semibold text-[45px] font-secondary text-accent/90 mb-7'>Myself</h2>
+            <h2 className='font-semibold text-[45px] font-secondary text-accent mb-7'>Myself</h2>
             <p className='text-[15px] mb-5 leading-6 lg:min-h-[160px] text-white/90'>&ensp;&ensp;&ensp;&ensp;{readmore? aboutDescription[0]+aboutDescription[1]:aboutDescription[0]}
               <span className='ml-2 cursor-pointer text-cyan-500 font-semibold hover:underline underline-offset-2 opacity-40 hover:opacity-100' onClick={()=>setReadMore(!readmore)}>{readmore?"Read Less...":"Read More..."}</span> 
             </p>
