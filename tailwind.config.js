@@ -29,7 +29,7 @@ module.exports = withMT({
         accent: '#B809C3',
       },
       backgroundImage: {
-        site: "url('./assets/site-bg.webp')",
+        site: "url('./assets/site-bg-min.jpg')",
         about: "url('./assets/about.png')",
         services: "url('./assets/services.png')",
       },
