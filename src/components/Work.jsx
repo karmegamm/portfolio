@@ -14,7 +14,7 @@ const Work = () => {
         <div className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'>
           {/* {text} */}
           <div className='lg:h-[243px]'>
-            <h2 className='lg:text-[55px] text-[30px] font-secondary font-medium leading-tight text-accent mb-3'>Projects Showcase</h2>
+            <h2 className='font-semibold lg:text-[50px] text-[30px] font-primary text-accent mb-3'>Projects Showcase</h2>
             <p className='max-w-sm mb-3 lg:mb-9 '>A JOURNEY THROUGH MY CREATIVE ACHIEVEMENTS
             </p>
             <button className='btn btn-sm'>View All Projects</button>
@@ -34,7 +34,7 @@ const Work = () => {
               <span className='text-3xl text-white'>K2 bookStore</span>
             </div>
             <div className='absolute -bottom-full left-12 group-hover:bottom-4 transition-all duration-1000 z-50'>
-                <a className='flex justify-center items-center gap-3 bg-blue-gray-600 rounded-xl px-2' target='_blank' href="https://envirron.net"><span className=' text-white'>Goto</span> <RiArrowRightCircleFill color='white' className='h-5 w-5'/></a>
+                <a className='flex justify-center items-center gap-3 bg-blue-gray-600 rounded-xl px-2' target='_blank' href="https://k2bookstore.netlify.app"><span className=' text-white'>Goto</span> <RiArrowRightCircleFill color='white' className='h-5 w-5'/></a>
               </div>
           </div>
         </div>
