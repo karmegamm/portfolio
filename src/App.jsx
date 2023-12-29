@@ -22,7 +22,7 @@ function App() {
       setIsLoading(false);
     };
     // Use window.onload to wait for all assets to be loaded
-    setTimeout(handleLoad,5000)
+    setTimeout(handleLoad,3000)
 
     // Cleanup the event listener
     return () => {
