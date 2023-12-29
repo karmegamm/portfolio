@@ -12,13 +12,17 @@ import LoadingSpinner from './components/Loading';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
+  
+  window.onload = () => {
+    setIsLoading(false)
+  }
 
   useEffect(() => {
     const handleLoad = () => {
       setIsLoading(false);
     };
     // Use window.onload to wait for all assets to be loaded
-    setTimeout(handleLoad,3500)
+    setTimeout(handleLoad,5000)
 
     // Cleanup the event listener
     return () => {
