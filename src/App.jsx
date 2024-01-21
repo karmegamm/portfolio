@@ -7,7 +7,7 @@ import Work from './components/Work';
 import Contact from './components/Contact';
 import Skills from './components/Skills';
 import LoadingSpinner from './components/Loading';
-
+import AnimatedCursor from "react-animated-cursor"
 
 
 function App() {
@@ -46,6 +46,22 @@ function App() {
           {/* <div className='h-[4000px]'></div> */}
         </div>
       )}
+     <AnimatedCursor
+  innerSize={8}
+  outerSize={34}
+  innerScale={1}
+  outerScale={1.5}
+  outerAlpha={0}
+  outerStyle={{
+    border: '2px solid #7C00A4 ',
+    backgroundColor:'transparent',
+    opacity:1
+  }}
+  innerStyle={{
+    backgroundColor: '#fff'
+  }}
+/>
+
     </>
   );
 }
