@@ -8,30 +8,36 @@ import Contact from './components/Contact';
 import Skills from './components/Skills';
 import LoadingSpinner from './components/Loading';
 import AnimatedCursor from "react-animated-cursor"
-
+import bgImagePath from "./assets/site-bg-min.jpg"
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   
-  window.onload = () => {
-    setIsLoading(false)
-  }
+  // window.onload = () => {
+  //   setIsLoading(false)
+  // }
 
-  useEffect(() => {
-    const handleLoad = () => {
-      setIsLoading(false);
-    };
-    // Use window.onload to wait for all assets to be loaded
-    setTimeout(handleLoad,3000)
+  // useEffect(() => {
+  //   const handleLoad = () => {
+  //     setIsLoading(false);
+  //   };
+  //   // Use window.onload to wait for all assets to be loaded
+  //   setTimeout(handleLoad,3000)
 
-    // Cleanup the event listener
-    return () => {
-      clearTimeout(handleLoad)
-    };
-  }, []);
+  //   // Cleanup the event listener
+  //   return () => {
+  //     clearTimeout(handleLoad)
+  //   };
+  // }, []);
 
   return (
     <>
+      <img 
+        src={bgImagePath} 
+        alt="Background" 
+        onLoad={() => setIsLoading(false)}
+        style={{ display: 'none' }} 
+      />
       {isLoading ? (
         <LoadingSpinner />
       ) : (
@@ -47,21 +53,20 @@ function App() {
         </div>
       )}
      <AnimatedCursor
-  innerSize={8}
-  outerSize={34}
-  innerScale={1}
-  outerScale={1.5}
-  outerAlpha={0}
-  outerStyle={{
-    border: '2px solid #7C00A4 ',
-    backgroundColor:'transparent',
-    opacity:1
-  }}
-  innerStyle={{
-    backgroundColor: '#fff'
-  }}
-/>
-
+        innerSize={8}
+        outerSize={34}
+        innerScale={1}
+        outerScale={1.5}
+        outerAlpha={0}
+        outerStyle={{
+          border: '2px solid #7C00A4 ',
+          backgroundColor:'transparent',
+          opacity:1
+        }}
+        innerStyle={{
+        backgroundColor: '#fff'
+        }}
+      />
     </>
   );
 }
