@@ -12,24 +12,23 @@ import bgImagePath from "./assets/site-bg-min.jpg"
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
-  const [isLoading2, setIsLoading2] = useState(true);
   
   // window.onload = () => {
   //   setIsLoading(false)
   // }
 
-  useEffect(() => {
-    const handleLoad = () => {
-      setIsLoading2(false);
-    };
-    // Use window.onload to wait for all assets to be loaded
-    setTimeout(handleLoad,3000)
+  // useEffect(() => {
+  //   const handleLoad = () => {
+  //     setIsLoading(false);
+  //   };
+  //   // Use window.onload to wait for all assets to be loaded
+  //   setTimeout(handleLoad,3000)
 
-    // Cleanup the event listener
-    return () => {
-      clearTimeout(handleLoad)
-    };
-  }, []);
+  //   // Cleanup the event listener
+  //   return () => {
+  //     clearTimeout(handleLoad)
+  //   };
+  // }, []);
 
   return (
     <>
@@ -39,7 +38,7 @@ function App() {
         onLoad={() => setIsLoading(false)}
         style={{ display: 'none' }} 
       />
-      {isLoading||isLoading2 ? (
+      {isLoading ? (
         <LoadingSpinner />
       ) : (
         <div className='relative bg-site bg-no-repeat bg-cover overflow-hidden'>
